@@ -13,11 +13,11 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from promo_finder.engine import run_show, seg_str, write_outputs
-from promo_finder.flow import cast_tokens, check_flow, promo_script_rows
-from promo_finder.llm import LLM, PROVIDERS
-from promo_finder.parse import fmt, parse_episode
-from promo_finder.pipeline import score, stranger_test, validate
+from engine import run_show, seg_str, write_outputs
+from flow import cast_tokens, check_flow, promo_script_rows
+from llm import LLM, PROVIDERS
+from parse import fmt, parse_episode
+from pipeline import score, stranger_test, validate
 
 st.set_page_config(page_title="Promo Finder", layout="wide")
 st.title("Promo Finder")
